@@ -1,0 +1,107 @@
+@import url("common.css");
+.height {
+  height: 60px;
+}
+
+.visual {
+  margin: 40px auto;
+  text-align: center;
+}
+
+.visual h2 {
+  color: #f8b0b0;
+  font-size: 20px;
+}
+
+.visual p {
+  font-size: 12px;
+  text-transform: inherit;
+  padding: 10px 20px;
+}
+
+.city {
+  overflow: hidden;
+  height: 90vw;
+  margin-top: 40px;
+}
+
+.city div {
+  position: relative;
+  height: 100%;
+}
+
+.city div a {
+  position: absolute;
+  width: 45%;
+  top: 8%;
+  left: 0;
+  -webkit-transform: translate(-50%);
+          transform: translate(-50%);
+}
+
+.city div a figure {
+  margin: 0;
+  position: relative;
+}
+
+.city div a figure img {
+  width: 100%;
+}
+
+.city div a figure figcaption {
+  position: absolute;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  -webkit-transition: .5s;
+  transition: .5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0;
+  font-size: 15px;
+}
+
+.city div a figure:hover figcaption {
+  opacity: 1;
+}
+
+.city div a.active {
+  width: 55%;
+  top: 0;
+}
+
+.city div a:nth-of-type(2) {
+  left: 200px;
+}
+
+.city div a:nth-of-type(3) {
+  left: 400px;
+}
+
+.city div a:nth-of-type(4) {
+  left: 600px;
+}
+
+.indi span {
+  display: inline-block;
+  border: 1px solid #f8b0b0;
+  border-radius: 100%;
+  width: 10px;
+  height: 10px;
+}
+
+.indi span.active {
+  background: #f8b0b0;
+}
+/*# sourceMappingURL=runway.css.map */

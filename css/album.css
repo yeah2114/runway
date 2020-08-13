@@ -1,0 +1,102 @@
+@import url("common.css");
+.height {
+  height: 60px;
+}
+
+.visual {
+  margin: 40px auto;
+  margin-bottom: 100px;
+}
+
+.visual h2 {
+  text-align: center;
+  font-size: 20px;
+}
+
+.visual ul {
+  margin-top: 30px;
+}
+
+.visual ul li {
+  border-top: 1px solid #e4e4e4;
+  position: relative;
+}
+
+.visual ul li a {
+  display: inline-block;
+  padding: 15px 20px;
+  font-size: 14px;
+}
+
+.visual ul li a span {
+  background: #f8b0b0;
+  height: 2px;
+  width: 7px;
+  position: absolute;
+  top: 23px;
+  right: 20px;
+  -webkit-transform: rotate(45deg) translateY(3px);
+          transform: rotate(45deg) translateY(3px);
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.visual ul li a span:nth-of-type(2) {
+  -webkit-transform: rotate(-45deg) translateY(3px);
+          transform: rotate(-45deg) translateY(3px);
+}
+
+.visual ul li div {
+  background: #e4e4e4;
+  display: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.visual ul li div a {
+  display: block;
+  font-weight: 200;
+  padding: 15px 20px;
+  border-top: 1px solid #fff;
+  font-size: 13px;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.visual ul li div a:before {
+  content: '';
+  display: inline-block;
+  background: url(../img/icon_right_white.png) center no-repeat;
+  width: 10px;
+  height: 15px;
+  margin-right: 10px;
+}
+
+.visual ul li div a:nth-of-type(1) {
+  border: none;
+}
+
+.visual ul li div a:hover {
+  background: #999;
+  color: #fff;
+}
+
+.visual ul li:nth-of-type(4) {
+  border-bottom: 1px solid #e4e4e4;
+}
+
+.visual ul li:hover div {
+  display: block;
+}
+
+.visual ul li:hover a span {
+  -webkit-transform: rotate(-45deg) translateY(-3px);
+          transform: rotate(-45deg) translateY(-3px);
+  top: 25px;
+}
+
+.visual ul li:hover a span:nth-of-type(2) {
+  -webkit-transform: rotate(-135deg) translateY(3px);
+          transform: rotate(-135deg) translateY(3px);
+}
+/*# sourceMappingURL=album.css.map */

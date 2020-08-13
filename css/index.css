@@ -1,0 +1,14 @@
+@import url("common.css");
+html, body {
+  background: #f8b0b0;
+}
+
+h1 {
+  text-align: center;
+  padding: 45vh 0;
+}
+
+h1 a {
+  padding: 45vh 20px;
+}
+/*# sourceMappingURL=index.css.map */

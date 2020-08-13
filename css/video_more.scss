@@ -1,0 +1,67 @@
+@import url('common.css');
+
+$pink:#f8b0b0;
+$white:#fff;
+$text:#555;
+
+.height{
+    height: 60px;
+}
+
+.visual{
+    margin-bottom: 200px;
+    text-align: center;
+    iframe{
+        width:100%;
+        margin-top:38px;
+    }
+    h2{
+        font-size:20px;
+        margin-top:20px;
+    }
+    p{
+        font-size:13px;
+        line-height: 2;
+        margin-bottom: 20px;
+    }
+}
+
+
+.btn{
+    width:100%;
+    position: fixed;
+    z-index: 1;
+    top:58px; left:0;
+    a{
+        display:inline-block;
+        width:50%;
+        text-align: center;
+        color:$white;
+        padding:14px 0;
+        font-size:13px;
+        font-weight: bold;
+        background:#bbb;
+    }
+    a.active{
+        background:$pink;
+    }
+}
+
+.sns{
+    margin:0 auto;
+    
+    a{
+        font-size:13px;
+        font-size:0;
+        display: inline-block;
+        margin:0 10px;
+        
+    }
+    @for $i from 1 to 6{
+        a:nth-of-type(#{$i}){
+            background:url(../img/icon_sns_0#{$i}.png) center no-repeat;
+            width:25px;
+            height: 25px;
+        }
+    }
+}
